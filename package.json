@@ -1,7 +1,7 @@
 {
   "name": "micro-status-antall",
   "description": "Viser antallet for de ulike tjenestene",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=6.9.2"
+    "node": ">=7.4.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -20,8 +20,9 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "micro -p 3000",
-    "now-deploy": "npm test && now && now alias"
+    "dev": "micro -p 3000",
+    "start": "NODE_ENV=production micro -p 8080",
+    "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
     "microservice",
@@ -37,7 +38,10 @@
     "url": "http://github.com/telemarks/micro-status-antall/issues"
   },
   "now": {
-    "alias": "antall.status.tfk.allthethings.win"
+    "alias": "antall.status.t-fk.win"
+  },
+  "greenkeeper": {
+    "emails": false
   },
   "devDependencies": {
     "coveralls": "2.11.15",
