@@ -1,7 +1,7 @@
 {
   "name": "micro-status-antall",
   "description": "Viser antallet for de ulike tjenestene",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -27,7 +27,7 @@
   "keywords": [
     "microservice",
     "micro",
-    "timer spart",
+    "status antall",
     "Telemark fylkeskommune"
   ],
   "repository": {
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "got": "6.7.1",
+    "marked": "0.3.6",
     "micro": "6.2.0"
   }
 }
