@@ -1,7 +1,7 @@
 {
   "name": "micro-status-antall",
   "description": "Viser antallet for de ulike tjenestene",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "license": "MIT",
   "private": true,
   "author": {
@@ -45,8 +45,8 @@
   },
   "devDependencies": {
     "coveralls": "2.11.16",
-    "standard": "9.0.2",
     "nsp": "2.6.3",
+    "standard": "8.6.0",
     "tap": "10.2.1"
   },
   "dependencies": {
